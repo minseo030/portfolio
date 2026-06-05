@@ -24,7 +24,6 @@
 
     p {
       font-size: 20px;
-      opacity: 0.9;
     }
 
     .card {
@@ -39,8 +38,8 @@
 
     .reels {
       display: flex;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
@@ -50,61 +49,55 @@
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 25px;
       background: #667eea;
       color: white;
       border-radius: 25px;
       text-decoration: none;
+      margin-top: 20px;
     }
 
     .btn:hover {
       background: #5a67d8;
     }
+
   </style>
 </head>
 
 <body>
 
   <div class="container">
+
+    <!-- 제목 -->
     <h1>민서의 포트폴리오</h1>
     <p>안녕하세요 👋 저를 소개합니다</p>
 
+    <!-- 자기소개 -->
     <div class="card">
-      <h2>👤 insta-@reborn030,@ameame.official</h2>
+      <h2>👤 insta-@reborn030,@ameame.official</h2>   
       <p>행복한 오타쿠생활</p>
-      
     </div>
 
+    <!-- 릴스 -->
     <div class="card">
       <h2>📱 내 릴스</h2>
 
       <div class="reels">
-
-        <!-- 릴스 1 -->
-        <iframe 
-          src="https://www.instagram.com/reel/DX6Wx6jh567/embed" 
-          width="300" 
-          height="550">
-        </iframe>
-
-        <!-- 릴스 2 -->
-        <iframe 
-          src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed" 
-          width="300" 
-          height="550">
-        </iframe>
-<div class="card">
-  <h2>📦 굿즈 기획</h2>
-
-  <a href="https://docs.google.com/document/d/1JBG-0nYka6AG7-MRtxFu0aFx9ZPeS2pv2fcOySRVnN8/edit?usp=sharing" 
-     target="_blank" 
-     class="btn">
-    기획서 보러가기
-  </a>
-
-</div>
+        <iframe src="https://www.instagram.com/reel/DX6Wx6jh567/embed" width="300" height="550"></iframe>
+        <iframe src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed" width="300" height="550"></iframe>
       </div>
+
+    </div>
+
+    <!-- ⭐ 여기 중요: 릴스 아래 새로운 카드 -->
+    <div class="card">
+      <h2>📦 프로젝트 기획</h2>
+
+      <a href="https://docs.google.com/document/d/1JBG-0nYka6AG7-MRtxFu0aFx9ZPeS2pv2fcOySRVnN8/edit?usp=sharing"
+         target="_blank"
+         class="btn">
+         기획서 보러가기
+      </a>
     </div>
 
   </div>
