@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <title>민서 포트폴리오</title>
+
   <style>
     body {
       margin: 0;
@@ -32,8 +33,19 @@
       margin: 40px auto;
       padding: 30px;
       border-radius: 15px;
-      max-width: 500px;
+      max-width: 900px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .reels {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    iframe {
+      border-radius: 10px;
     }
 
     .btn {
@@ -51,6 +63,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
@@ -58,24 +71,35 @@
     <p>안녕하세요 👋 저를 소개합니다</p>
 
     <div class="card">
-      <h2>👤insta. reborn030</h2>
-      <p>행복한 오타쿠생활 </p>
-      
+      <h2>👤 About Me</h2>
+      <p>이름: 민서</p>
+      <p>전공: (여기에 입력)</p>
+      <p>목표: (여기에 입력)</p>
+    </div>
 
-  <h2>📱 내 릴스</h2>
+    <div class="card">
+      <h2>📱 내 릴스</h2>
 
-<iframe 
-  src="https://www.instagram.com/reel/DX6Wx6jh567/embed" 
-  width="320" 
-  height="600" 
-  frameborder="0">
-</iframe>
+      <div class="reels">
+
+        <!-- 릴스 1 -->
+        <iframe 
+          src="https://www.instagram.com/reel/DX6Wx6jh567/embed" 
+          width="300" 
+          height="550">
+        </iframe>
+
+        <!-- 릴스 2 -->
+        <iframe 
+          src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed" 
+          width="300" 
+          height="550">
+        </iframe>
+
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
-<iframe 
-  src="https://www.instagram.com/reel/DX6Wx6jh567/embed" 
-  width="320" 
-  height="600" 
-  frameborder="0">
-</iframe>
