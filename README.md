@@ -54,8 +54,8 @@
 <body>
 
   <div class="container">
-    <h1>민서의 포트폴리오</h1>
-    <p>안녕하세요 👋 저를 소개합니다</p>
+    <h1>박민서의 포트폴리오</h1>
+    <p>빅데이터응용통계학과 박민서</p>
 
     <div class="card">
       <h2>👤 About Me</h2>
