@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>chanal 기린</title>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: #fff0f5;
-      color: #333;
     }
 
     header {
-      background: #ffb6c1;
-      padding: 20px;
+      background: linear-gradient(45deg, #ffb6c1, #ff69b4);
+      padding: 25px;
       text-align: center;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
       color: white;
     }
 
     .container {
-      padding: 30px;
       max-width: 900px;
       margin: auto;
+      padding: 30px;
     }
 
     h2 {
@@ -32,36 +32,52 @@
       padding-bottom: 5px;
     }
 
+    /* 릴스 카드 */
     .reels {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
       margin-top: 20px;
     }
 
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 10px;
+    .reel-card {
+      display: block;
+      padding: 40px;
+      background: #ffc0cb;
+      border-radius: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.3s;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
+    .reel-card:hover {
+      background: #ff69b4;
+      transform: translateY(-5px);
+    }
+
+    /* 카드 공통 */
     .card {
       margin-top: 50px;
-      padding: 20px;
+      padding: 25px;
       background: #ffe4e1;
-      border-radius: 12px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 15px;
+      padding: 12px 18px;
       background: #ff69b4;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
     .btn:hover {
@@ -69,6 +85,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -81,15 +98,23 @@
     <h2>릴스</h2>
 
     <div class="reels">
-      <iframe src="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/embed"></iframe>
-      <iframe src="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/embed"></iframe>
-      <iframe src="https://www.instagram.com/reborn_030/reel/DZuDci9h_6j/embed"></iframe>
+      <a href="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/" target="_blank" class="reel-card">
+        💖 릴스 1 보러가기
+      </a>
+
+      <a href="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/" target="_blank" class="reel-card">
+        💖 릴스 2 보러가기
+      </a>
+
+      <a href="https://www.instagram.com/reborn_030/reel/DZuDci9h_6j/" target="_blank" class="reel-card">
+        💖 릴스 3 보러가기
+      </a>
     </div>
 
     <!-- 오타프레 -->
     <div class="card">
       <h2>나의 홈페이지 "오타프레"</h2>
-      <p>AI로 만든 나만의 웹사이트</p>
+      <p>AI로 제작한 나만의 웹사이트</p>
 
       <a href="https://ottaplace.aiapp.help/?v=ver-3383806b-564d-4257-a47f-0849d8782de2"
          target="_blank"
