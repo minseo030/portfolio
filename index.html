@@ -2,30 +2,29 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>애니메이션·서브컬처 콘텐츠를 제작하는 크리에이터</title>
+<title>/title>“애니메이션·서브컬처 콘텐츠를 제작하는 크리에이터"</title>
 
 <style>
 body {
   margin: 0;
   font-family: 'Pretendard', sans-serif;
-  background: #fff0f5;
 }
 
-/* 네비 */
+/* 상단 네비 */
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background: #ff8fab;
+  background: #0b1a33;
   color: white;
 }
 
-.logo {
+nav .logo {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-.menu a {
+nav .menu a {
   margin-left: 20px;
   color: white;
   text-decoration: none;
@@ -33,32 +32,28 @@ nav {
 
 /* 히어로 */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  background: linear-gradient(135deg, #0b1a33, #1e3a5f);
+  color: white;
+  padding: 100px 40px;
 }
 
 .hero h1 {
   font-size: 42px;
-  color: #ff4d6d;
 }
 
 .hero span {
-  color: #ff8fab;
+  color: #66e0c2;
 }
 
-/* 릴스 섹션 */
+/* 릴스 */
 .reels-section {
-  padding: 60px 40px;
+  padding: 80px 40px;
+  text-align: center;
 }
 
-.reels-title {
-  background: #ff8fab;
-  color: white;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  font-weight: bold;
+.reels-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .reels {
@@ -67,66 +62,34 @@ nav {
   gap: 20px;
 }
 
-/* 카드 */
-.card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.03);
-}
-
-/* 썸네일 */
-.thumb {
+.reel iframe {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-/* 재생 아이콘 */
-.play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
-}
-
-/* 링크 */
-.card a {
-  position: relative;
-  display: block;
-}
-
-.card p {
-  text-align: center;
-  padding: 10px;
+  height: 300px;
+  border-radius: 12px;
 }
 
 /* 하단 */
 .section {
   padding: 60px 40px;
+  background: #f5f5f5;
+  margin-top: 40px;
 }
 
 .btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #ff4d6d;
+  background: #0b1a33;
   color: white;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 </style>
 
 </head>
 <body>
 
+<!-- 네비 -->
 <nav>
   <div class="logo">chanal 기린</div>
   <div class="menu">
@@ -136,60 +99,41 @@ nav {
   </div>
 </nav>
 
+<!-- 히어로 -->
 <section class="hero">
-  <h1>
-    안녕하세요.<br>
-    저는 <span>콘텐츠 크리에이터 박민서</span> 입니다.
-  </h1>
-  <p>릴스를 활용한 감각적인 맛집 콘텐츠 제작</p>
+  <h1>안녕하세요.<br>
+  저는 <span>콘텐츠 크리에이터</span> 입니다.</h1>
+  <p>릴스를 활용한 맛집 콘텐츠 제작</p>
 </section>
 
+<!-- 릴스 -->
 <section class="reels-section" id="reels">
-  <div class="reels-title">내 릴스</div>
+  <h2>Video Portfolio</h2>
 
   <div class="reels">
 
-    <!-- 카드 1 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DW1fMWzAX4S/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel1">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 1</p>
+    <div class="reel">
+      <iframe src="https://www.instagram.com/reel/DW1fMWzAX4S/embed"></iframe>
     </div>
 
-    <!-- 카드 2 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DXN6ZXtgfgs/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel2">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 2</p>
+    <div class="reel">
+      <iframe src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed"></iframe>
     </div>
 
-    <!-- 카드 3 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DX6Wx6jh567/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel3">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 3</p>
+    <div class="reel">
+      <iframe src="https://www.instagram.com/reel/DX6Wx6jh567/embed"></iframe>
     </div>
 
-    <!-- 카드 4 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DZuDci9h_6j/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel4">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 4</p>
+    <div class="reel">
+      <iframe src="https://www.instagram.com/reel/DZuDci9h_6j/embed"></iframe>
     </div>
 
   </div>
 </section>
 
+<!-- 기획서 -->
 <section class="section" id="docs">
-  <h2>기획서 & 프로젝트</h2>
+  <h2>기획서</h2>
 
   <p>기획서 1</p>
   <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0" target="_blank" class="btn">보기</a>
@@ -203,5 +147,3 @@ nav {
 
 </body>
 </html>
-
-</div>
