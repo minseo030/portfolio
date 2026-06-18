@@ -2,96 +2,196 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>/title>애니메이션·서브컬처 콘텐츠를 제작하는 크리에이터"</title>
+<title>채널 기린 포트폴리오</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Pretendard', sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* 상단 네비 */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #0b1a33;
-  color: white;
+body{
+  font-family:'Pretendard',sans-serif;
+  color:#444;
+
+  background-color:#fff7fb;
+
+  background-image:
+    radial-gradient(#ffb6d9 2px, transparent 2px),
+    radial-gradient(#ffd6ea 2px, transparent 2px);
+
+  background-size:40px 40px;
+  background-position:0 0,20px 20px;
 }
 
-nav .logo {
-  font-weight: bold;
-  font-size: 20px;
+/* 네비 */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 40px;
+
+  background:#ff8fc7;
+
+  position:sticky;
+  top:0;
+
+  z-index:999;
+
+  box-shadow:0 3px 15px rgba(255,143,199,.3);
 }
 
-nav .menu a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
+.logo{
+  color:white;
+  font-size:24px;
+  font-weight:800;
+}
+
+.menu a{
+  margin-left:25px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
 }
 
 /* 히어로 */
-.hero {
-  background: linear-gradient(135deg, #0b1a33, #1e3a5f);
-  color: white;
-  padding: 100px 40px;
+
+.hero{
+  text-align:center;
+
+  padding:120px 20px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ffb6d9,
+    #ff8fc7
+  );
+
+  color:white;
 }
 
-.hero h1 {
-  font-size: 42px;
+.hero h1{
+  font-size:52px;
+  line-height:1.4;
 }
 
-.hero span {
-  color: #66e0c2;
+.hero span{
+  color:#fff3a0;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:18px;
 }
 
 /* 릴스 */
-.reels-section {
-  padding: 80px 40px;
-  text-align: center;
+
+.reels-section{
+  padding:80px 40px;
 }
 
-.reels-section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+.reels-section h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:34px;
+  color:#ff69b4;
 }
 
-.reels {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+.reels{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
-.reel iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 12px;
+.reel iframe{
+  width:100%;
+  height:500px;
+
+  border:none;
+
+  border-radius:25px;
+
+  background:white;
+
+  box-shadow:
+  0 10px 25px rgba(255,143,199,.25);
 }
 
-/* 하단 */
-.section {
-  padding: 60px 40px;
-  background: #f5f5f5;
-  margin-top: 40px;
+/* 기획서 */
+
+.section{
+  width:90%;
+  max-width:1100px;
+
+  margin:50px auto;
+
+  padding:50px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,.85);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+  0 10px 25px rgba(255,143,199,.15);
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #0b1a33;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+.section h2{
+  color:#ff69b4;
+  margin-bottom:30px;
+}
+
+.section p{
+  margin-top:20px;
+  font-weight:600;
+}
+
+/* 버튼 */
+
+.btn{
+  display:inline-block;
+
+  margin-top:10px;
+  margin-bottom:10px;
+
+  padding:12px 22px;
+
+  text-decoration:none;
+
+  color:white;
+
+  background:#ff8fc7;
+
+  border-radius:999px;
+
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  background:#ff6fb9;
+}
+
+/* 푸터 */
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:#999;
 }
 </style>
 
 </head>
 <body>
 
-<!-- 네비 -->
 <nav>
-  <div class="logo">chanal 기린</div>
+  <div class="logo">🎀 chanal 기린</div>
+
   <div class="menu">
     <a href="#">Home</a>
     <a href="#reels">Videos</a>
@@ -99,16 +199,20 @@ nav .menu a {
   </div>
 </nav>
 
-<!-- 히어로 -->
 <section class="hero">
-  <h1>chanal 기린<br>
-   <span>“애니메이션·서브컬처 콘텐츠를 제작하는 크리에이터.</h1>
-  <p></p>
+  <h1>
+    채널 기린<br>
+    <span>애니메이션 · 서브컬처 콘텐츠 크리에이터</span>
+  </h1>
+
+  <p>
+    릴스 제작 · 기획서 · 포트폴리오
+  </p>
 </section>
 
-<!-- 릴스 -->
 <section class="reels-section" id="reels">
-  <h2>Video Portfolio</h2>
+
+  <h2>🎬 Video Portfolio</h2>
 
   <div class="reels">
 
@@ -129,11 +233,12 @@ nav .menu a {
     </div>
 
   </div>
+
 </section>
 
-<!-- 기획서 -->
 <section class="section" id="docs">
-  <h2>기획서</h2>
+
+  <h2>📄 기획서</h2>
 
   <p>기획서 1</p>
   <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0" target="_blank" class="btn">보기</a>
@@ -143,7 +248,12 @@ nav .menu a {
 
   <p>오타 플레이스</p>
   <a href="https://ottaplace.aiapp.link/?v=ver-ace6e479-e48e-46ac-98a6-7ec47582e80d#" target="_blank" class="btn">바로가기</a>
+
 </section>
+
+<footer>
+  💖 CHANAL GIRIN Portfolio
+</footer>
 
 </body>
 </html>
