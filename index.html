@@ -2,106 +2,101 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>민서 포트폴리오</title>
-
+  <title>chanal 기린</title>
   <style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #ff9a9e, #fecfef);
-      text-align: center;
+      background: #fff0f5;
       color: #333;
     }
 
+    header {
+      background: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
     .container {
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 42px;
-      color: #ff4d88;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    .card {
-      background: white;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 20px;
+      padding: 30px;
       max-width: 900px;
-      box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+      margin: auto;
     }
 
     h2 {
-      color: #ff4d88;
+      color: #ff69b4;
+      border-bottom: 2px solid #ffc0cb;
+      padding-bottom: 5px;
     }
 
     .reels {
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 20px;
     }
 
     iframe {
-      border-radius: 15px;
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .btn {
+    .category {
+      margin-top: 60px;
+      padding: 20px;
+      background: #ffe4e1;
+      border-radius: 10px;
+    }
+
+    .category a {
       display: inline-block;
-      padding: 12px 25px;
-      background: #ff4d88;
+      padding: 10px 15px;
+      background: #ff69b4;
       color: white;
-      border-radius: 30px;
       text-decoration: none;
-      margin-top: 20px;
-      font-weight: bold;
-      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+      border-radius: 8px;
+      margin-top: 10px;
     }
 
-    .btn:hover {
-      background: #ff3385;
+    .category a:hover {
+      background: #ff1493;
     }
-
   </style>
 </head>
-
 <body>
+
+  <header>
+    chanal 기린
+  </header>
 
   <div class="container">
 
-    <!-- 제목 -->
-    <h1>💖 chanal reborn030 💖</h1>
-    
+    <h2>릴스</h2>
 
-    <!-- 자기소개 -->
-    <div class="card">
-        <h2>👤 insta-@reborn030,@ameame.official</h2>   
-      <p>행복한 오타쿠생활</p>
+    <div class="reels">
+      <!-- 릴스 1 -->
+      <iframe src="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/embed"></iframe>
+
+      <!-- 릴스 2 -->
+      <iframe src="https://www.instagram.com/reborn_030/reel/DW1fMWzAX4S/embed"></iframe>
+
+      <!-- 릴스 3 -->
+      <iframe src="https://www.instagram.com/reborn_030/reel/DZuDci9h_6j/embed"></iframe>
     </div>
 
-    <!-- 릴스 -->
-    <div class="card">
-      <h2>📱 My Reels</h2>
 
-      <div class="reels">
-        <iframe src="https://www.instagram.com/reel/DX6Wx6jh567/embed" width="300" height="550"></iframe>
-        <iframe src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed" width="300" height="550"></iframe>
-      </div>
-    </div>
-
-    <!-- 기획 -->
-    <div class="card">
-      <h2>🎀 프로젝트 기획</h2>
-
-      <a href="https://docs.google.com/document/d/1JBG-0nYka6AG7-MRtxFu0aFx9ZPeS2pv2fcOySRVnN8/edit?usp=sharing"
-         target="_blank"
-         class="btn">
-         💌 기획서 보러가기
+    <!-- 아래 카테고리 -->
+    <div class="category">
+      <h2>굿즈 기획</h2>
+      <p>기획 문서 보기</p>
+      <a href="https://docs.google.com/document/d/1JBG-0nYka6AG7-MRtxFu0aFx9ZPeS2pv2fcOySRVnN8/edit" target="_blank">
+        문서 열기
       </a>
     </div>
 
