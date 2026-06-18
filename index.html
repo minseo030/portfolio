@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -10,13 +9,9 @@ body {
   margin: 0;
   font-family: 'Arial Black', sans-serif;
   background-color: #fff0f5;
-  background-image: 
-    radial-gradient(circle, #ffe4ec 10%, transparent 10%),
-    radial-gradient(circle, #e0f7ff 10%, transparent 10%);
-  background-size: 40px 40px;
 }
 
-/* 상단 제목 */
+/* 제목 */
 header {
   text-align: center;
   font-size: 42px;
@@ -25,14 +20,14 @@ header {
   padding: 40px 0;
 }
 
-/* 공통 컨테이너 */
+/* 컨테이너 */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
-/* 릴스 섹션 */
+/* 릴스 박스 */
 .reels-box {
   background: white;
   border-radius: 20px;
@@ -50,27 +45,22 @@ header {
   margin-bottom: 20px;
 }
 
-/* 릴스 4개 나란히 */
+/* 4개 배치 */
 .reels {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
-.reel {
-  text-decoration: none;
-  color: black;
-}
-
-/* 썸네일 */
-.reel img {
+/* iframe */
+.reel iframe {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 250px;
   border-radius: 12px;
+  border: none;
 }
 
-/* 하단 카드 */
+/* 하단 */
 .section {
   background: white;
   padding: 20px;
@@ -92,7 +82,6 @@ header {
   border-radius: 10px;
 }
 </style>
-
 </head>
 
 <body>
@@ -102,43 +91,36 @@ header {
 <div class="container">
 
   <!-- 릴스 -->
-
   <div class="reels-box">
     <div class="reels-title">내 릴스</div>
 
-```
-<div class="reels">
+    <div class="reels">
 
-  <a href="https://www.instagram.com/reel/DW1fMWzAX4S/" target="_blank" class="reel">
-    <img src="https://via.placeholder.com/300x400?text=Reel1">
-  </a>
+      <div class="reel">
+        <iframe src="https://www.instagram.com/reel/DW1fMWzAX4S/embed"></iframe>
+      </div>
 
-  <a href="https://www.instagram.com/reel/DXN6ZXtgfgs/" target="_blank" class="reel">
-    <img src="https://via.placeholder.com/300x400?text=Reel2">
-  </a>
+      <div class="reel">
+        <iframe src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed"></iframe>
+      </div>
 
-  <a href="https://www.instagram.com/reel/DX6Wx6jh567/" target="_blank" class="reel">
-    <img src="https://via.placeholder.com/300x400?text=Reel3">
-  </a>
+      <div class="reel">
+        <iframe src="https://www.instagram.com/reel/DX6Wx6jh567/embed"></iframe>
+      </div>
 
-  <a href="https://www.instagram.com/reel/DZuDci9h_6j/" target="_blank" class="reel">
-    <img src="https://via.placeholder.com/300x400?text=Reel4">
-  </a>
+      <div class="reel">
+        <iframe src="https://www.instagram.com/reel/DZuDci9h_6j/embed"></iframe>
+      </div>
 
-</div>
-```
-
+    </div>
   </div>
 
-  <!-- 기획서 1 -->
-
+  <!-- 기획서 -->
   <div class="section">
     <h2>기획서 1</h2>
     <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0"
        target="_blank" class="btn">열기</a>
   </div>
-
-  <!-- 기획서 2 -->
 
   <div class="section">
     <h2>기획서 2</h2>
@@ -147,7 +129,6 @@ header {
   </div>
 
   <!-- 오타플레이스 -->
-
   <div class="section">
     <h2>오타 플레이스</h2>
     <a href="https://ottaplace.aiapp.link/?v=ver-ace6e479-e48e-46ac-98a6-7ec47582e80d#"
