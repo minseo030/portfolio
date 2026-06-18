@@ -1,205 +1,39 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title>chanal 기린</title>
+<div class="reels">
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Pretendard', sans-serif;
-  background: #fff0f5;
-}
-
-/* 네비 */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #ff8fab;
-  color: white;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.menu a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-/* 히어로 */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  color: #ff4d6d;
-}
-
-.hero span {
-  color: #ff8fab;
-}
-
-/* 릴스 섹션 */
-.reels-section {
-  padding: 60px 40px;
-}
-
-.reels-title {
-  background: #ff8fab;
-  color: white;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.reels {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-/* 카드 */
-.card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.03);
-}
-
-/* 썸네일 */
-.thumb {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-/* 재생 아이콘 */
-.play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
-}
-
-/* 링크 */
-.card a {
-  position: relative;
-  display: block;
-}
-
-.card p {
-  text-align: center;
-  padding: 10px;
-}
-
-/* 하단 */
-.section {
-  padding: 60px 40px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #ff4d6d;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-}
-</style>
-
-</head>
-<body>
-
-<nav>
-  <div class="logo">chanal 기린</div>
-  <div class="menu">
-    <a href="#">Home</a>
-    <a href="#reels">Videos</a>
-    <a href="#docs">Docs</a>
+  <!-- 릴스 1 -->
+  <div class="card">
+    <iframe 
+      src="https://www.instagram.com/reel/DW1fMWzAX4S/embed" 
+      allowfullscreen>
+    </iframe>
+    <p>릴스 1</p>
   </div>
-</nav>
 
-<section class="hero">
-  <h1>
-    안녕하세요.<br>
-    저는 <span>콘텐츠 크리에이터 박민서</span> 입니다.
-  </h1>
-  <p>릴스를 활용한 감각적인 맛집 콘텐츠 제작</p>
-</section>
-
-<section class="reels-section" id="reels">
-  <div class="reels-title">내 릴스</div>
-
-  <div class="reels">
-
-    <!-- 카드 1 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DW1fMWzAX4S/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel1">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 1</p>
-    </div>
-
-    <!-- 카드 2 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DXN6ZXtgfgs/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel2">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 2</p>
-    </div>
-
-    <!-- 카드 3 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DX6Wx6jh567/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel3">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 3</p>
-    </div>
-
-    <!-- 카드 4 -->
-    <div class="card">
-      <a href="https://www.instagram.com/reel/DZuDci9h_6j/" target="_blank">
-        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel4">
-        <div class="play">▶</div>
-      </a>
-      <p>릴스 4</p>
-    </div>
-
+  <!-- 릴스 2 -->
+  <div class="card">
+    <iframe 
+      src="https://www.instagram.com/reel/DXN6ZXtgfgs/embed" 
+      allowfullscreen>
+    </iframe>
+    <p>릴스 2</p>
   </div>
-</section>
 
-<section class="section" id="docs">
-  <h2>기획서 & 프로젝트</h2>
+  <!-- 릴스 3 -->
+  <div class="card">
+    <iframe 
+      src="https://www.instagram.com/reel/DX6Wx6jh567/embed" 
+      allowfullscreen>
+    </iframe>
+    <p>릴스 3</p>
+  </div>
 
-  <p>기획서 1</p>
-  <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0" target="_blank" class="btn">보기</a>
+  <!-- 릴스 4 -->
+  <div class="card">
+    <iframe 
+      src="https://www.instagram.com/reel/DZuDci9h_6j/embed" 
+      allowfullscreen>
+    </iframe>
+    <p>릴스 4</p>
+  </div>
 
-  <p>기획서 2</p>
-  <a href="https://docs.google.com/document/d/1J4wDncyQ7DMA5UHpoFx3K_KT6HoNioaAPrcJCwanoeA/edit?tab=t.0" target="_blank" class="btn">보기</a>
-
-  <p>오타 플레이스</p>
-  <a href="https://ottaplace.aiapp.link/?v=ver-ace6e479-e48e-46ac-98a6-7ec47582e80d#" target="_blank" class="btn">바로가기</a>
-</section>
-
-</body>
-</html>
+</div>
