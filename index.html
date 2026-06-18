@@ -8,188 +8,200 @@
 body {
   margin: 0;
   font-family: 'Pretendard', sans-serif;
-  background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
-  color: #333;
+  background: #fff0f5;
 }
 
-h1 {
-  text-align: center;
-  padding: 30px;
-  color: #ff4d88;
+/* 네비 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #ff8fab;
+  color: white;
 }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 20px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.title {
+.logo {
+  font-weight: bold;
   font-size: 22px;
-  margin-bottom: 15px;
-  color: #ff4d88;
+}
+
+.menu a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* 히어로 */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #ff4d6d;
+}
+
+.hero span {
+  color: #ff8fab;
+}
+
+/* 릴스 섹션 */
+.reels-section {
+  padding: 60px 40px;
+}
+
+.reels-title {
+  background: #ff8fab;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 
+.reels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* 카드 */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* 썸네일 */
+.thumb {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* 재생 아이콘 */
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+/* 링크 */
+.card a {
+  position: relative;
+  display: block;
+}
+
+.card p {
+  text-align: center;
+  padding: 10px;
+}
+
+/* 하단 */
+.section {
+  padding: 60px 40px;
+}
+
 .btn {
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: #ff80ab;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ff4d6d;
   color: white;
   text-decoration: none;
-  font-size: 13px;
-}
-
-.btn:hover {
-  background: #ff4d88;
-}
-
-/* 릴스 */
-<div class="card reels">
-  <div class="title">릴스</div>
-
-  <iframe src="https://www.instagram.com/reeel/https://www.instagram.com/reel/DW1fMWzAX4S/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reels/DXN6ZXtgfgs//embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reels/DX6Wx6jh567//embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reel/DZuDci9h_6j/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
-
-</div>
-.reels-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.reels-grid iframe {
-  width: 100%;
-  height: 300px;
   border-radius: 10px;
-  border: none;
-}
-/* 기획서 */
-.plan-box {
-  border: 2px dashed #ff9eb5;
-  padding: 20px;
-  border-radius: 15px;
-  background: #fff0f5;
-}.reels-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.reels-grid iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  border: none;
-}
-
-.plan-item {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<h1>애니메이션·서브컬처 콘텐츠를 제작하는 크리에이터</h1>
+<nav>
+  <div class="logo">chanal 기린</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#reels">Videos</a>
+    <a href="#docs">Docs</a>
+  </div>
+</nav>
 
-<section>
+<section class="hero">
+  <h1>
+    안녕하세요.<br>
+    저는 <span>콘텐츠 크리에이터 박민서</span> 입니다.
+  </h1>
+  <p>릴스를 활용한 감각적인 맛집 콘텐츠 제작</p>
+</section>
 
-<!-- 소개 -->
-<div class="card">
-  <div class="title">소개</div>
-  <p>
-    안녕하십니까. 빅데이터응용통계학과 박민서입니다.<br><br>
-    저는 트렌드와 서브컬처 감성을 결합한 콘텐츠를 제작하는 크리에이터를 목표로 하고 있습니다.
-  </p>
-</div>
+<section class="reels-section" id="reels">
+  <div class="reels-title">내 릴스</div>
 
-<!-- 릴스 -->
-<div class="card reels">
-  <div class="title">릴스</div>
+  <div class="reels">
 
-  <!-- ✔ 이미 작동되는 릴스 하나 넣어둠 -->
-  <div class="card reels">
-  <div class="title">릴스</div>
+    <!-- 카드 1 -->
+    <div class="card">
+      <a href="https://www.instagram.com/reel/DW1fMWzAX4S/" target="_blank">
+        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel1">
+        <div class="play">▶</div>
+      </a>
+      <p>릴스 1</p>
+    </div>
 
-  <iframe src="https://www.instagram.com/reeel/https://www.instagram.com/reel/DW1fMWzAX4S/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reels/DXN6ZXtgfgs//embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reels/DX6Wx6jh567//embed"></iframe>
-  <iframe src="https://www.instagram.com/reel/https://www.instagram.com/reel/DZuDci9h_6j/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==/embed"></iframe>
-.reels-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
+    <!-- 카드 2 -->
+    <div class="card">
+      <a href="https://www.instagram.com/reel/DXN6ZXtgfgs/" target="_blank">
+        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel2">
+        <div class="play">▶</div>
+      </a>
+      <p>릴스 2</p>
+    </div>
 
-.reels-grid iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  border: none;
-}
-  
+    <!-- 카드 3 -->
+    <div class="card">
+      <a href="https://www.instagram.com/reel/DX6Wx6jh567/" target="_blank">
+        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel3">
+        <div class="play">▶</div>
+      </a>
+      <p>릴스 3</p>
+    </div>
 
-</div>
-
-<div class="card">
-
-  <div class="title">포토그레이x가정교사히트맨리본 굿즈</div>
-
-
-
-  <div class="plan-grid">
-
-
-
-    <!-- 필살탄 머리띠 -->
-
-    <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0" target="_blank" class="plan-card">
-
-      <img src="스크린샷 2026-06-19 072644.png">
-
-      <div class="overlay">필살탄 머리띠</div>
-
-    </a>
-
-
-
-    <!--봉고레링 목걸이-->
-
-    <a href="https://docs.google.com/document/d/1J4wDncyQ7DMA5UHpoFx3K_KT6HoNioaAPrcJCwanoeA/edit?tab=t.0" target="_blank" class="plan-card"> 
-
-      <img src="스크린샷 2026-06-19 072716.png">
-
-      <div class="overlay">봉고레링 목걸이</div>
-
-    </a>
-
-
-
-    <!-- 오타플레이스 -->
-
-    <a href="https://ottaplace.aiapp.link/?v=ver-ace6e479-e48e-46ac-98a6-7ec47582e80d#" target="_blank" class="plan-card"> 
-
-      <img src="이미지3.jpg">
-
-      <div class="overlay">오타플레이스</div>
-
-    </a>
-
-
+    <!-- 카드 4 -->
+    <div class="card">
+      <a href="https://www.instagram.com/reel/DZuDci9h_6j/" target="_blank">
+        <img class="thumb" src="https://via.placeholder.com/300x400?text=Reel4">
+        <div class="play">▶</div>
+      </a>
+      <p>릴스 4</p>
+    </div>
 
   </div>
+</section>
+
+<section class="section" id="docs">
+  <h2>기획서 & 프로젝트</h2>
+
+  <p>기획서 1</p>
+  <a href="https://docs.google.com/document/d/1W03lXA3HtOk9FFkEo2jmVUaPpAKNx0PWdITMu8mbTIs/edit?tab=t.0" target="_blank" class="btn">보기</a>
+
+  <p>기획서 2</p>
+  <a href="https://docs.google.com/document/d/1J4wDncyQ7DMA5UHpoFx3K_KT6HoNioaAPrcJCwanoeA/edit?tab=t.0" target="_blank" class="btn">보기</a>
+
+  <p>오타 플레이스</p>
+  <a href="https://ottaplace.aiapp.link/?v=ver-ace6e479-e48e-46ac-98a6-7ec47582e80d#" target="_blank" class="btn">바로가기</a>
+</section>
+
+</body>
+</html>
 
 </div>
